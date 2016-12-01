@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9DCE79A1DBA6A8F009C397C /* BSLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9DCE7981DBA6A8F009C397C /* BSLib.cpp */; settings = {ASSET_TAGS = (); }; };
+		A9DCE79D1DBA7559009C397C /* Option.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9DCE79B1DBA7559009C397C /* Option.cpp */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A9B4D2AC1DB94103001FE35A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A9BD3CCF1DECF1F700383108 /* Option */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Option; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DCE7981DBA6A8F009C397C /* BSLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSLib.cpp; sourceTree = "<group>"; };
+		A9DCE7991DBA6A8F009C397C /* BSLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BSLib.hpp; sourceTree = "<group>"; };
+		A9DCE79B1DBA7559009C397C /* Option.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Option.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9B4D2AB1DB94103001FE35A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9B4D2A51DB94103001FE35A = {
+			isa = PBXGroup;
+			children = (
+				A9DCE7981DBA6A8F009C397C /* BSLib.cpp */,
+				A9DCE7991DBA6A8F009C397C /* BSLib.hpp */,
+				A9DCE79B1DBA7559009C397C /* Option.cpp */,
+				A9BD3CCF1DECF1F700383108 /* Option */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9B4D2AD1DB94103001FE35A /* Option */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9B4D2B51DB94103001FE35A /* Build configuration list for PBXNativeTarget "Option" */;
+			buildPhases = (
+				A9B4D2AA1DB94103001FE35A /* Sources */,
+				A9B4D2AB1DB94103001FE35A /* Frameworks */,
+				A9B4D2AC1DB94103001FE35A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Option;
+			productName = Option;
+			productReference = A9BD3CCF1DECF1F700383108 /* Option */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9B4D2A61DB94103001FE35A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = junyan;
+				TargetAttributes = {
+					A9B4D2AD1DB94103001FE35A = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A9B4D2A91DB94103001FE35A /* Build configuration list for PBXProject "Option" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9B4D2A51DB94103001FE35A;
+			productRefGroup = A9B4D2A51DB94103001FE35A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9B4D2AD1DB94103001FE35A /* Option */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B4D2AA1DB94103001FE35A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCE79D1DBA7559009C397C /* Option.cpp in Sources */,
+				A9DCE79A1DBA6A8F009C397C /* BSLib.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A9B4D2B31DB94103001FE35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m/;
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib/gsl/lib,
+					/opt/local/Library/Frameworks/Python.framework/Versions/3.5/lib,
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lgsl",
+					"-lgslcblas",
+					"-lpython3.5",
+				);
+				REEXPORTED_LIBRARY_NAMES = "";
+				REEXPORTED_LIBRARY_PATHS = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A9B4D2B41DB94103001FE35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_MASTER_OBJECT_FILE = YES;
+				HEADER_SEARCH_PATHS = /opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m/;
+				LD_DYLIB_INSTALL_NAME = "";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib/gsl/lib,
+					/opt/local/Library/Frameworks/Python.framework/Versions/3.5/lib,
+				);
+				LINK_WITH_STANDARD_LIBRARIES = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-lgsl",
+					"-lgslcblas",
+					"-lpython3.5",
+				);
+				REEXPORTED_LIBRARY_NAMES = "";
+				REEXPORTED_LIBRARY_PATHS = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A9B4D2B61DB94103001FE35A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/lib/gsl/include,
+					/opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m,
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					/usr/lib/gsl/include,
+					/opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "";
+				OTHER_LIBTOOLFLAGS = "-L/usr/lib/gsl/lib -lgsl -lgslcblas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_NAMES = "";
+				REEXPORTED_LIBRARY_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "/usr/lib/gsl/include /opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m/";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		A9B4D2B71DB94103001FE35A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					/usr/lib/gsl/include,
+					/opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m,
+				);
+				LD_RUNPATH_SEARCH_PATHS = "";
+				OTHER_LIBTOOLFLAGS = "-L/usr/lib/gsl/lib -lgsl -lgslcblas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REEXPORTED_LIBRARY_NAMES = "";
+				REEXPORTED_LIBRARY_PATHS = "";
+				USER_HEADER_SEARCH_PATHS = "/usr/lib/gsl/include /opt/local/Library/Frameworks/Python.framework/Versions/3.5/include/python3.5m/";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9B4D2A91DB94103001FE35A /* Build configuration list for PBXProject "Option" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B4D2B31DB94103001FE35A /* Debug */,
+				A9B4D2B41DB94103001FE35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9B4D2B51DB94103001FE35A /* Build configuration list for PBXNativeTarget "Option" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B4D2B61DB94103001FE35A /* Debug */,
+				A9B4D2B71DB94103001FE35A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9B4D2A61DB94103001FE35A /* Project object */;
+}
