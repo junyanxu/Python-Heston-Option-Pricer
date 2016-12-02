@@ -7,7 +7,7 @@ Date:   Dec 1st, 2016
 
 ## 1. Module Introduction
 
-The library is designed for providing fast C++ implementation of Heston model pricer. You can download the library to easily compute all kinds of Heston model variaties. Currently the package support the pricing of:
+The library is designed for providing fast C++ implementation of Heston model pricer for Python. You can download the library to easily compute all kinds of Heston model variaties. Currently the package support the pricing of:
     1. Normal B-S model option
     2. Heston model
     3. Heston model with Gaussian jumps(for vol surface calibration before discrete event)
@@ -22,15 +22,18 @@ The pricing module is implemented in C++ so it has faster computation speed than
 ```
 ./configure
 ```
-    2. The type 
+
+    2. The type
 ```
 make
 ```
+
     3. After compliation finished, type
 ```
 make install
 ```
 Now the gsl has been installed into your computer and the headers are in **\usr\local\include** and libraries object files are in **\usr\local\lib**
+
 
     4. Switch to my Option directory. you will see setup.py there, type
 ```
