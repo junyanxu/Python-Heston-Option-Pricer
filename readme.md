@@ -8,10 +8,10 @@ Date:   Dec 1st, 2016
 ## 1. Module Introduction
 
 The library is designed for providing fast C++ implementation of Heston model pricer for Python. You can download the library to easily compute all kinds of Heston model variaties. Currently the package support the pricing of:
-    1. Normal B-S model option
-    2. Heston model
-    3. Heston model with Gaussian jumps(for vol surface calibration before discrete event)
-    4. Two-regime Heston model with Gaussian jumps
+* Normal B-S model option
+* Heston model
+* Heston model with Gaussian jumps(for vol surface calibration before discrete event)
+* Two-regime Heston model with Gaussian jumps
 The $\alpha$ in the formula is set to be 1.5 while the integral range is set to be $[-2000, 2000]$. It is recommended that you can choose StepSize to be 0.4.  
 
 ## 2. Pricing Module
