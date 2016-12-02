@@ -19,23 +19,23 @@ The $\alpha$ in the formula is set to be 1.5 while the integral range is set to 
 ### Installation
 The pricing module is implemented in C++ so it has faster computation speed than directly implementing in Python. To begin with you need to install GNU Scientific Library in your PC. After download latest [GSL](http://ftp://ftp.gnu.org/gnu/gsl/), extract the .tar.gz or .zip into a directory. Now we start to install this C++ library
 
-*. cd to the directory, type following command into terminal
+* cd to the directory, type following command into terminal
 ```
 ./configure
 ```
 
-*. Then type
+* Then type
 ```
 make
 ```
 
-*. After compliation finished, type
+* After compliation finished, type
 ```
 make install
 ```
 Now the gsl has been installed into your computer and the headers are in **\usr\local\include** and libraries object files are in **\usr\local\lib**
 
-*. Switch to my Option directory. you will see setup.py there, type
+* Switch to my Option directory. you will see setup.py there, type
 ```
 sudo python setup.py build install
 ```
