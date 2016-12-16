@@ -1,8 +1,9 @@
 
-Author: Junyan Xu  
-Date:   Dec 1st, 2016  
+# Heston Model Pricing Library[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-# Heston Model Pricing Library
+
+_Author: Junyan Xu_  
+_Date:   Dec 1st, 2016_  
 
 
 ## 1. Module Introduction
@@ -85,5 +86,3 @@ TwoRegimeHestonModelPut(S, V0, K, T1, T2, r, Kappa1, Theta1, Eta1, Rho1, Kappa2,
 ### Example of Calibration
 ![optional caption text](figures/test1.png)
 ![optional caption text](figures/test2.png)
-
-

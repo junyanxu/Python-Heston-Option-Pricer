@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E330942F25C617FD392133BB956D92052F67FD61",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E330942F25C617FD392133BB956D92052F67FD61" : 0,
+    "4A2420D035B285BF2CD3388E49915BB9E0EB3DB3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "23BFD798-A8C3-413E-BCBA-6DB574ABBA32",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E330942F25C617FD392133BB956D92052F67FD61" : "Python-Heston-Option-Pricer\/",
+    "4A2420D035B285BF2CD3388E49915BB9E0EB3DB3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Option",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Option.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:junyanxu\/Option.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A2420D035B285BF2CD3388E49915BB9E0EB3DB3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/junyanxu\/Python-Heston-Option-Pricer",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E330942F25C617FD392133BB956D92052F67FD61"
+    }
+  ]
+}
