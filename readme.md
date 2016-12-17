@@ -45,7 +45,7 @@ sudo python setup.py build install
 
 ### A simple exotic volatility surface example
 
-After installed Option module to your python. Open up your ipython console to try:
+After installed PyHeston module to your python. Open up your ipython console to try:
 ```python
 import PyHeston
 import numpy
@@ -136,7 +136,7 @@ plt.show()
 
 ### Function List
 
-The interface of all functions in **Option** module are listed here:
+The interface of all functions in **PyHeston** module are listed here:
 ```python
 from PyHeston import *
 BSCall(S, K, T, Sigma, d, r)
