@@ -30,17 +30,17 @@ double BSTheta(double S, double K, double T, double Sigma, double d, double r);
  Main stochastics model pricer
  */
 
-double HestonModelCall(double S, double VolSquare, double K, double T, double r,
-                       double Chi, double Theta, double Ita, double Rho,
-                       double StepSize);
+double HestonCall(double S, double VolSquare, double K, double T, double r,
+                  double Chi, double Theta, double Ita, double Rho,
+                  double StepSize);
 double HestonMixedGaussianCall(double S, double VolSquare, double K, double T,
                                double r, double Chi, double Theta, double Ita,
                                double Rho, double Up, double UpSigma,
                                double Down, double DownSigma, double StepSize);
-double TwoRegimeHestonModelCall(double S, double VolSquare, double K, double T1,
-                                double T2, double r, double Chi1, double Theta1,
-                                double Ita1, double Rho1, double Chi2, double Theta2,
-                                double Ita2, double Rho2, double StepSize);
+double TwoRegimeHestonCall(double S, double VolSquare, double K, double T1,
+                           double T2, double r, double Chi1, double Theta1,
+                           double Ita1, double Rho1, double Chi2, double Theta2,
+                           double Ita2, double Rho2, double StepSize);
 
 double TwoRegimeHestonMixedGaussianCall(double S, double VolSquare, double K, double T1, double T2, double r,
                                         double Chi1, double Theta1, double Ita1, double Rho1,

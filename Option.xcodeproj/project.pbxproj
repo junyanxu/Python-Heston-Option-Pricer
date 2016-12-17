@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9DCE79A1DBA6A8F009C397C /* BSLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9DCE7981DBA6A8F009C397C /* BSLib.cpp */; settings = {ASSET_TAGS = (); }; };
-		A9DCE79D1DBA7559009C397C /* Option.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9DCE79B1DBA7559009C397C /* Option.cpp */; settings = {ASSET_TAGS = (); }; };
+		A9DCE79D1DBA7559009C397C /* PyHeston.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9DCE79B1DBA7559009C397C /* PyHeston.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,10 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A9BD3CCF1DECF1F700383108 /* Option */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Option; sourceTree = BUILT_PRODUCTS_DIR; };
+		A952B1BF1E059DD200CA63A1 /* BSDoc.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BSDoc.hpp; sourceTree = "<group>"; };
+		A9BD3CCF1DECF1F700383108 /* Option */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = Option; path = "/Users/junyan/Desktop/IMC/Option/Python-Heston-Option-Pricer/build/Debug/Option"; sourceTree = "<absolute>"; };
 		A9DCE7981DBA6A8F009C397C /* BSLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSLib.cpp; sourceTree = "<group>"; };
 		A9DCE7991DBA6A8F009C397C /* BSLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BSLib.hpp; sourceTree = "<group>"; };
-		A9DCE79B1DBA7559009C397C /* Option.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Option.cpp; sourceTree = "<group>"; };
+		A9DCE79B1DBA7559009C397C /* PyHeston.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PyHeston.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,10 +45,10 @@
 		A9B4D2A51DB94103001FE35A = {
 			isa = PBXGroup;
 			children = (
+				A952B1BF1E059DD200CA63A1 /* BSDoc.hpp */,
 				A9DCE7981DBA6A8F009C397C /* BSLib.cpp */,
 				A9DCE7991DBA6A8F009C397C /* BSLib.hpp */,
-				A9DCE79B1DBA7559009C397C /* Option.cpp */,
-				A9BD3CCF1DECF1F700383108 /* Option */,
+				A9DCE79B1DBA7559009C397C /* PyHeston.cpp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +108,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9DCE79D1DBA7559009C397C /* Option.cpp in Sources */,
+				A9DCE79D1DBA7559009C397C /* PyHeston.cpp in Sources */,
 				A9DCE79A1DBA6A8F009C397C /* BSLib.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

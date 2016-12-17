@@ -7,6 +7,7 @@
 //
 
 #include "BSLib.hpp"
+#include "BSDoc.hpp"
 #include <Python.h>
 
 static PyObject *SpamError;
@@ -61,24 +62,24 @@ static PyObject * Option_BSPutIV(PyObject *self, PyObject *args)
     return PyFloat_FromDouble(BSPutIV(P, S, K, T, d, r));
 }
 
-static PyObject * Option_HestonModelCall(PyObject *self, PyObject *args)
+static PyObject * Option_HestonCall(PyObject *self, PyObject *args)
 {
     double S, VolSquare, K, T, r, Chi, Theta, Ita, Rho, StepSize;
     if (!PyArg_ParseTuple(args, "dddddddddd", &S, &VolSquare, &K, &T, &r, &Chi, &Theta, &Ita, &Rho, &StepSize)){
         PyErr_SetString(SpamError, "Input is not valid");
         return NULL;
     }
-    return PyFloat_FromDouble(HestonModelCall(S, VolSquare, K, T, r, Chi, Theta, Ita, Rho, StepSize));
+    return PyFloat_FromDouble(HestonCall(S, VolSquare, K, T, r, Chi, Theta, Ita, Rho, StepSize));
 }
 
-static PyObject * Option_HestonModelPut(PyObject *self, PyObject *args)
+static PyObject * Option_HestonPut(PyObject *self, PyObject *args)
 {
     double S, VolSquare, K, T, r, Chi, Theta, Ita, Rho, StepSize;
     if (!PyArg_ParseTuple(args, "dddddddddd", &S, &VolSquare, &K, &T, &r, &Chi, &Theta, &Ita, &Rho, &StepSize)){
         PyErr_SetString(SpamError, "Input is not valid");
         return NULL;
     }
-    return PyFloat_FromDouble(HestonModelCall(S, VolSquare, K, T, r, Chi, Theta, Ita, Rho, StepSize) + K*exp(-r*T) - S);
+    return PyFloat_FromDouble(HestonCall(S, VolSquare, K, T, r, Chi, Theta, Ita, Rho, StepSize) + K*exp(-r*T) - S);
 }
 
 static PyObject * Option_HestonMixedGaussianCall(PyObject *self, PyObject *args)
@@ -111,7 +112,7 @@ static PyObject * Option_TwoRegimeHestonModelCall(PyObject *self, PyObject *args
         PyErr_SetString(SpamError, "Input is not valid");
         return NULL;
     }
-    return PyFloat_FromDouble(TwoRegimeHestonModelCall(S, VolSquare, K, T1, T2, r, Chi1, Theta1, Ita1, Rho1, Chi2, Theta2, Ita2, Rho2, StepSize));
+    return PyFloat_FromDouble(TwoRegimeHestonCall(S, VolSquare, K, T1, T2, r, Chi1, Theta1, Ita1, Rho1, Chi2, Theta2, Ita2, Rho2, StepSize));
 }
 
 static PyObject * Option_TwoRegimeHestonModelPut(PyObject *self, PyObject *args)
@@ -121,7 +122,7 @@ static PyObject * Option_TwoRegimeHestonModelPut(PyObject *self, PyObject *args)
         PyErr_SetString(SpamError, "Input is not valid");
         return NULL;
     }
-    return PyFloat_FromDouble(TwoRegimeHestonModelCall(
+    return PyFloat_FromDouble(TwoRegimeHestonCall(
         S, VolSquare, K, T1, T2, r, Chi1, Theta1, Ita1, Rho1, Chi2, Theta2, Ita2, Rho2, StepSize) + K*exp(-r*(T1+T2)) - S);
 }
 
@@ -162,20 +163,20 @@ extern "C"{
         {"BSVega",  Option_BSVega, METH_VARARGS, "Calculate BS Vega"},
         {"BSCallIV",  Option_BSCallIV, METH_VARARGS, "Calculate BS call option implied vol"},
         {"BSPutIV",  Option_BSPutIV, METH_VARARGS, "Calculate BS put option implied vol"},
-        {"HestonModelCall",  Option_HestonModelCall, METH_VARARGS, "Calculate heston model call option price"},
-        {"HestonModelPut",  Option_HestonModelPut, METH_VARARGS, "Calculate heston model put option price"},
-        {"HestonMixedGaussianCall", Option_HestonMixedGaussianCall, METH_VARARGS, "Calculate Heston Mixed Gaussian call option price"},
-        {"HestonMixedGaussianPut", Option_HestonMixedGaussianPut, METH_VARARGS, "Calculate Heston Mixed Gaussian put option price"},
-        {"TwoRegimeHestonModelCall", Option_TwoRegimeHestonModelCall, METH_VARARGS, "Calculate Two Regime Heston call option price"},
-        {"TwoRegimeHestonModelPut", Option_TwoRegimeHestonModelPut, METH_VARARGS, "Calculate Two Regime Heston put option price"},
+        {"HestonCall",  Option_HestonCall, METH_VARARGS, doc::HestonCall},
+        {"HestonPut",  Option_HestonPut, METH_VARARGS, doc::HestonPut},
+        {"HestonMixedGaussianCall", Option_HestonMixedGaussianCall, METH_VARARGS, doc::HestonMixedGaussianCall},
+        {"HestonMixedGaussianPut", Option_HestonMixedGaussianPut, METH_VARARGS, doc::HestonMixedGaussianPut},
+        {"TwoRegimeHestonCall", Option_TwoRegimeHestonModelCall, METH_VARARGS, "Calculate Two Regime Heston call option price"},
+        {"TwoRegimeHestonPut", Option_TwoRegimeHestonModelPut, METH_VARARGS, "Calculate Two Regime Heston put option price"},
         {"TwoRegimeHestonMixedGaussianCall", Option_TwoRegimeHestonMixedGaussianCall, METH_VARARGS, "Calculate Two Regime Heston Gaussian call option price"},
         {"TwoRegimeHestonMixedGaussianPut", Option_TwoRegimeHestonMixedGaussianPut, METH_VARARGS, "Calculate Two Regime Heston Gaussian put option price"},
         {NULL, NULL, 0, NULL}        /* Sentinel */
     };
     
-    static struct PyModuleDef Optionmodule = {
+    static struct PyModuleDef PyHestonmodule = {
         PyModuleDef_HEAD_INIT,
-        "Option",   /* name of module */
+        "PyHeston",   /* name of module */
         NULL, /* module documentation, may be NULL */
         -1,       /* size of per-interpreter state of the module,
                    or -1 if the module keeps state in global variables. */
@@ -183,18 +184,18 @@ extern "C"{
     };
     
     PyMODINIT_FUNC
-    PyInit_Option(void)
+    PyInit_PyHeston(void)
     {
-        return PyModule_Create(&Optionmodule);
+        return PyModule_Create(&PyHestonmodule);
     }
 }
 
 int main(){
     printf("Result %f\n", HestonMixedGaussianCall(200, 0, 200, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.000001, 0, -0.000001, 0, 0.4));
-    printf("Result %f\n", TwoRegimeHestonModelCall(200, 0, 200, 0.1, 0.05, 0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.4));
+    printf("Result %f\n", TwoRegimeHestonCall(200, 0, 200, 0.1, 0.05, 0, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.4));
     printf("Result %f\n", TwoRegimeHestonMixedGaussianCall(
         200, 0, 200, 0.1, 0.05, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0, -0.1, 0, 0.4));
-    printf("Result %f\n", HestonModelCall(200, 0, 200, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.4));
+    printf("Result %f\n", HestonCall(200, 0, 200, 0.2, 0.1, 0.1, 0.1, 0.1, 0.1, 0.4));
 }
 
 

@@ -219,8 +219,8 @@ gsl_complex MixedGaussianCF(gsl_complex z, double Up, double UpSigma, double Dow
 }
 
 
-double HestonModelCall(double S, double VolSquare, double K, double T, double r,
-                       double Chi, double Theta, double Ita, double Rho, double StepSize)
+double HestonCall(double S, double VolSquare, double K, double T, double r,
+                  double Chi, double Theta, double Ita, double Rho, double StepSize)
 {
     if(K==0){
         return S;
@@ -247,9 +247,9 @@ double x, double Volsquare, double T1, double T2, double r,
 double Chi1, double Theta1, double Ita1, double Rho1,
 double Chi2, double Theta2, double Ita2, double Rho2*/
 
-double TwoRegimeHestonModelCall(double S, double VolSquare, double K, double T1, double T2, double r,
-                                double Chi1, double Theta1, double Ita1, double Rho1,
-                                double Chi2, double Theta2, double Ita2, double Rho2, double StepSize)
+double TwoRegimeHestonCall(double S, double VolSquare, double K, double T1, double T2, double r,
+                           double Chi1, double Theta1, double Ita1, double Rho1,
+                           double Chi2, double Theta2, double Ita2, double Rho2, double StepSize)
 {
     if(K==0){
         return S;
