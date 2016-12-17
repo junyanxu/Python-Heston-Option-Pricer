@@ -167,8 +167,8 @@ extern "C"{
         {"HestonPut",  Option_HestonPut, METH_VARARGS, doc::HestonPut},
         {"HestonMixedGaussianCall", Option_HestonMixedGaussianCall, METH_VARARGS, doc::HestonMixedGaussianCall},
         {"HestonMixedGaussianPut", Option_HestonMixedGaussianPut, METH_VARARGS, doc::HestonMixedGaussianPut},
-        {"TwoRegimeHestonCall", Option_TwoRegimeHestonModelCall, METH_VARARGS, "Calculate Two Regime Heston call option price"},
-        {"TwoRegimeHestonPut", Option_TwoRegimeHestonModelPut, METH_VARARGS, "Calculate Two Regime Heston put option price"},
+        {"TwoRegimeHestonCall", Option_TwoRegimeHestonModelCall, METH_VARARGS, doc::TwoRegimeHestonCall},
+        {"TwoRegimeHestonPut", Option_TwoRegimeHestonModelPut, METH_VARARGS, doc::TwoRegimeHestonPut},
         {"TwoRegimeHestonMixedGaussianCall", Option_TwoRegimeHestonMixedGaussianCall, METH_VARARGS, "Calculate Two Regime Heston Gaussian call option price"},
         {"TwoRegimeHestonMixedGaussianPut", Option_TwoRegimeHestonMixedGaussianPut, METH_VARARGS, "Calculate Two Regime Heston Gaussian put option price"},
         {NULL, NULL, 0, NULL}        /* Sentinel */
