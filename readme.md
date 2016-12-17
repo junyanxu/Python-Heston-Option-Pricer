@@ -3,12 +3,14 @@
 
 
 _Author: Junyan Xu_  
-_Date:   Dec 1st, 2016_  
+_Date:   Dec 17th, 2016_  
 
 
 ## 1. Module Introduction
 
-The library is designed for providing fast C++ implementation of Heston model pricer for Python. You can download the library to easily compute all kinds of Heston model variaties. Currently the package support the pricing of:
+Before the discrete events happen, there are usually some abnormalities on the theoretically "convex" vol surface. Very often at the ATM part we will see some small bumps. This package provide you a simple way to use combination of Heston and jump model to calibrate these exotic shape. 
+
+The library is designed for providing fast C++ implementation of Heston model pricer for Python. You can download the library to easily compute all kinds of Heston model variation. Currently the package support the pricing of:
 * Normal B-S model option
 * Heston model
 * Heston model with Gaussian jumps(for vol surface calibration before discrete event)
