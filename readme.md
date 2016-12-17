@@ -45,7 +45,7 @@ sudo python setup.py build install
 
 After installed Option module to your python. Open up your ipython console to try:
 ```python
-import Option
+import PyHeston
 S = 100
 V0 = 0.09
 K = 100
@@ -60,7 +60,7 @@ UpSigma = 0.1
 Down = -0.1
 DownSigma = 0.1
 StepSize = 0.4
-print(Option.HestonMixedGaussianCall(
+print(PyHeston.HestonMixedGaussianCall(
         S, V0, K, T, r, Kappa, Theta, Eta, Rho, Up, UpSigma, Down, DownSigma, StepSize))
 ```
 
@@ -68,7 +68,7 @@ print(Option.HestonMixedGaussianCall(
 
 The interface of all functions in **Option** module are listed here:
 ```python
-from Option import *
+from PyHeston import *
 BSCall(S, K, T, Sigma, d, r)
 BSPut(S, K, T, Sigma, d, r)
 BSCallIV(C, S, K, T, d, r)
