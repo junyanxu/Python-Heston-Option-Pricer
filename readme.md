@@ -15,7 +15,7 @@ The library is designed for providing fast C++ implementation of Heston model pr
 * Heston model
 * Heston model with Gaussian jumps(for vol surface calibration before discrete event)
 * Two-regime Heston model with Gaussian jumps
-The $\alpha$ in the formula is set to be 1.5 while the integral range is set to be $[-2000, 2000]$. It is recommended that you can choose StepSize to be 0.4.  
+The complex integral shift constant in the formula is set to be 1.5 while the integral range is set to be [-2000, 2000]. It is recommended that you can choose StepSize to be 0.4. * 
 
 ## 2. Pricing Module
 
@@ -111,8 +111,6 @@ def getHestonMixedGaussianCallIV(K, T):
         S, K, T, dividend, 0
     )
 
-
-getHestonMixedGaussianCallIV(200, 1)
 Strikes = numpy.arange(140, 260, 5)
 T = numpy.arange(0.001, 0.1, 0.001)
 Strikes, T = numpy.meshgrid(Strikes, T)
