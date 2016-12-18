@@ -14,7 +14,9 @@ The library is designed for providing fast C++ implementation of Heston model pr
 * Normal B-S model option
 * Heston model
 * Heston model with Gaussian jumps(for vol surface calibration before discrete event)
+* Two-regime Heston model (assume Heston parameters are different before and after discrete event)
 * Two-regime Heston model with Gaussian jumps
+
 The complex integral shift constant in the formula is set to be 1.5 while the integral range is set to be [-2000, 2000]. It is recommended that you can choose StepSize to be 0.4. * 
 
 ## 2. Pricing Module
