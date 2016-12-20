@@ -17,7 +17,7 @@ The library is designed for providing fast C++ implementation of Heston model pr
 * Two-regime Heston model (assume Heston parameters are different before and after discrete event)
 * Two-regime Heston model with Gaussian jumps
 
-The complex integral shift constant in the formula is set to be 1.5 while the integral range is set to be -2000, 2000. It is recommended that you can choose StepSize to be 0.4. * 
+The complex integral shift constant in the formula is set to be 1.5 while the integral range is set to be -2000, 2000. It is recommended that you can choose StepSize to be 0.4. * The standard way using fft to price option can be found in [Option valuation using the fast Fourier transform](http://engineering.nyu.edu/files/jcfpub.pdf)
 
 ## 2. Pricing Module
 
