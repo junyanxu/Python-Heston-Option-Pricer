@@ -154,5 +154,4 @@ TwoRegimeHestonModelPut(S, V0, K, T1, T2, r, Kappa1, Theta1, Eta1, Rho1, Kappa2,
 ```
 
 ### Other Example of Calibration
-![optional caption text](figures/test1.png)
 ![optional caption text](figures/test2.png)
